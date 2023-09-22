@@ -19,9 +19,8 @@ const cleaningEntries = () => {
 
 const removingBookFunction = (id) => {
   const booksArray = JSON.parse(localStorage.getItem('Added books'));
-  const updatedArray = booksArray.filter((book) => {
-    return book.Title !== id;
-  });
+  const updatedArray = booksArray.filter((book) => book.Title !== id);
+
   localStorage.setItem('Added books', JSON.stringify(updatedArray));
 };
 
