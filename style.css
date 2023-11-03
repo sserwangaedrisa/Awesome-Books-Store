@@ -25,6 +25,9 @@ li {
 #four {
   border-right: 0px;
 }
+.date {
+  margin-left: auto;
+}
 
 h1 {
   font-weight: 600;
