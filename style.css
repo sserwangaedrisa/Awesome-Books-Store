@@ -1,3 +1,31 @@
+.Nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+ul {
+  list-style: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+li {
+  border-right: 2px solid black;
+  padding: 4px;
+  font-size: large;
+}
+
+#one {
+  margin-right: auto;
+  border-right: 0px;
+}
+#four {
+  border-right: 0px;
+}
+
 h1 {
   font-weight: 600;
   text-align: center;
