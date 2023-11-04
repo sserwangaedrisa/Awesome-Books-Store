@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-end;
 }
-ul {
+.navItems {
   list-style: none;
   border: 2px solid black;
   border-radius: 3px;
@@ -12,7 +12,7 @@ ul {
   flex-direction: row;
   justify-content: flex-end;
 }
-li {
+.firstlist {
   border-right: 2px solid black;
   padding: 4px;
   font-size: large;
@@ -97,4 +97,12 @@ h2 {
   background-color: aqua;
   font-size: medium;
   width: 100%;
+}
+
+.contactInfo {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.contactList {
+  list-style: initial;
 }
