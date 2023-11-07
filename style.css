@@ -52,7 +52,7 @@ h1 {
 }
 
 #bookssetion {
-  margin-top: 130px;
+  margin-top: 150px;
 }
 
 .books-section {
@@ -139,9 +139,10 @@ h2 {
   margin: 10px;
 }
 
-section:target {
-  margin-top: 130px;
-  display: block;
-  height: 100%;
-  padding-top: 20vh;
+.notHidden {
+  padding-top: 25vh;
+}
+
+.hidden {
+  display: none;
 }

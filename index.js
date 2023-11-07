@@ -1,7 +1,28 @@
+const spa = () => {
+  const links = document.querySelectorAll('#NavItems a');
+  links.forEach((element) => {
+    element.addEventListener('click', (event) => {
+      const targetSectionId = event.target.attributes[0].value.slice(1);
+      const sections = document.querySelectorAll('section');
+      sections.forEach((section) => {
+        if (section.id !== targetSectionId) {
+          section.classList.add('hidden');
+        } else {
+          section.classList.remove('hidden');
+          section.classList.add('notHidden');
+        }
+      });
+    });
+  });
+};
+
+spa();
+
 class BookManager {
   constructor() {
     this.title = document.getElementById('Title');
     this.author = document.getElementById('Author');
+
     this.addButton = document.getElementById('AddButton');
     this.booksSection = document.getElementById('Books-section');
     this.addedBooks = [];
@@ -66,5 +87,8 @@ class BookManager {
   }
 }
 
-const bookManager = new BookManager();
-bookManager();
+const renderWeb = () => {
+  const bookManager = new BookManager();
+  bookManager();
+};
+renderWeb();
