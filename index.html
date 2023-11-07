@@ -7,22 +7,60 @@
     <title>Awesome Books Store</title>
   </head>
   <body>
-    <h1>Awesome Books</h1>
-    <div class="books-section" id="Books-section"></div>
-    <hr id="line" />
-
-    <div class="entries" id="Entries">
-      <h2>Add a new book</h2>
-      <div class="title">
-        <input id="Title" name="Title" placeholder="Title" type="text" />
-      </div>
-      <div class="author">
-        <input type="text" placeholder="Author" name="Author" id="Author" />
-      </div>
-      <div class="addButton">
-        <button type="submit" id="AddButton">Add</button>
-      </div>
+    <div class="Nav">
+      <ul class="navItems" id="NavItems">
+        <li class="firstlist" id="one"><a href="">Awesome books</a></li>
+        <li class="firstlist" id="two"><a href="#bookssetion">List</a></li>
+        <li class="firstlist" id="three">
+          <a href="#formsection">Add new</a>
+        </li>
+        <li class="firstlist" id="four"><a href="#Contact">Contacts</a></li>
+      </ul>
+      <p class="date">November 03, 2023</p>
     </div>
+
+    <section id="bookssetion">
+      <h1>Awesome Books</h1>
+      <div class="books-section" id="Books-section"></div>
+      <hr id="line" />
+    </section>
+
+    <section id="formsection">
+      <div class="entries" id="Entries">
+        <h2>Add a new book</h2>
+        <div class="title">
+          <input id="Title" name="Title" placeholder="Title" type="text" />
+        </div>
+        <div class="author">
+          <input type="text" placeholder="Author" name="Author" id="Author" />
+        </div>
+        <div class="addButton">
+          <button type="submit" id="AddButton">Add</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="Contact">
+      <div class="contactInfo">
+        <h2 class="contactsHead">Contact information</h2>
+        <p class="contactIntro">
+          Incase your want to talk to us for more information or inquiries.
+          please contact us using the information below
+        </p>
+        <ul class="contactList">
+          <li id="email">Our e-mail: sserwangaedrisa@gmail.com</li>
+          <li id="number">Our phone number: 07564289788</li>
+          <li id="address">Physical address: Kajjansi along Entebbe road</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footerSection">
+      <div class="footer">
+        <p class="footerContent">Designed by SSERWANGA EDIRISA</p>
+        <p class="reviewer">Reviewed by ANOLD</p>
+      </div>
+    </section>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

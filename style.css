@@ -1,10 +1,62 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(240, 248, 255, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.navItems {
+  list-style: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  box-shadow: 3px 3px 3px black;
+}
+
+.firstlist {
+  border-right: 2px solid black;
+  padding: 4px;
+  font-size: large;
+}
+
+#one {
+  margin-right: auto;
+  border-right: none;
+}
+
+#four {
+  border-right: none;
+}
+
+.date {
+  margin-left: auto;
+}
+
 h1 {
   font-weight: 600;
   text-align: center;
   font-size: x-large;
 }
 
+#bookssetion {
+  margin-top: 150px;
+}
+
 .books-section {
+  margin: 10px;
   border: 1px solid black;
   border-radius: 5px;
 }
@@ -66,4 +118,31 @@ h2 {
   background-color: aqua;
   font-size: medium;
   width: 100%;
+}
+
+.contactInfo {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.contactList {
+  list-style: initial;
+}
+
+.footerSection {
+  background-color: rgb(203, 221, 237);
+  padding: 5px;
+  box-shadow: 3px 3px 3px black;
+}
+
+.footer {
+  margin: 10px;
+}
+
+.notHidden {
+  padding-top: 25vh;
+}
+
+.hidden {
+  display: none;
 }
